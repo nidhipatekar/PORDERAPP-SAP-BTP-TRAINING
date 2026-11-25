@@ -1,0 +1,90 @@
+###
+GET http://localhost:4004/odata/v4/catalog
+
+###
+GET http://localhost:4004/odata/v4/catalog/EmployeeSrv?$top=10
+
+###
+GET http://localhost:4004/odata/v4/catalog/BPSrv
+
+###
+GET http://localhost:4004/odata/v4/catalog/AddressSrv
+
+###
+GET http://localhost:4004/odata/v4/catalog/ProductsSrv
+
+###
+GET http://localhost:4004/odata/v4/catalog/POSSrv
+
+###
+GET http://localhost:4004/odata/v4/catalog/POItemsSrv
+
+###
+POST http://localhost:4004/odata/v4/catalog/EmployeeSrv
+Content-Type: application/json
+
+ {
+      "Currency_code": "USD",
+      "ID": "02BD2137-0890-1EEA-A6C2-BB55C19787AB",
+      "accountNumber": "113682791",
+      "bankName": "Bank of Mumbai",
+      "bankid": "51110002",
+      "email": "patekarnidhi4@gmail.com",
+      "gender": "F",
+      "language": "E",
+      "loginName": "NIDZ",
+      "nameFirst": "Neha",
+      "nameInitials": "",
+      "nameLast": "Patekar",
+      "nameMiddle": "",
+      "phoneNumber": "+91 866978-147",
+      "salaryAmount": "107000.00"
+    }
+
+###
+ PUT http://localhost:4004/odata/v4/catalog/EmployeeSrv/02BD2137-0890-1EEA-A6C2-BB55C19787AB
+Content-Type: application/json
+ 
+{
+      "Currency_code": "USD",
+      "salaryAmount": "75000.00"
+}
+ 
+###
+DELETE http://localhost:4004/odata/v4/catalog/EmployeeSrv/02BD2137-0890-1EEA-A6C2-BB55C19787AB
+
+###
+GET http://localhost:4004/odata/v4/catalog/getEmployeeInfo()
+
+###
+POST http://localhost:4004/odata/v4/catalog/createEmployee
+Content-Type: application/json
+ 
+{
+      "input" : {
+      "Currency_code": "USD",
+      "ID": "02BD2137-0890-1EEA-A6C2-BB55C1978111",
+      "accountNumber": "111222000",
+      "bankId": "510000666",
+      "bankName": "My Bank of Mumbai",
+      "email": "rahul.kl@itelo.info",
+      "gender": "F",
+      "language": "E",
+      "loginName": "RAHULKL",
+      "nameFirst": "K L",
+      "nameInitials": null,
+      "nameLast": "Rahul",
+      "nameMiddle": null,
+      "phoneNumber": "+1 999 3741 524",
+      "salaryAmount": "67549.00"
+      }
+}
+
+###
+GET http://localhost:4004/odata/v4/catalog/POSrv/74867AD200E41EDBA5D8B0C98DC2C052
+ 
+###
+POST http://localhost:4004/odata/v4/catalog/POSrv('74867AD200E41EDBA5D8B0C98DC2C052')/discountPrice
+Content-Type: application/json
+ 
+{}

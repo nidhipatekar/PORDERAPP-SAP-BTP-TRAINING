@@ -1,0 +1,13 @@
+{
+    "SAP HANA Database Explorer.ShowXsAdvancedConnections": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "TEST",
+            "database": "${workspaceFolder:porderapp1}/db.sqlite"
+        }
+    ],
+    "SAP HANA SQLScript LSP.URL": "",
+    "SAP HANA SQLScript LSP.XsAdvancedHrttServiceUrl": ""
+}
